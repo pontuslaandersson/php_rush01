@@ -1,14 +1,14 @@
 <?PHP
-include_once("Escort.class.php");
+include_once("Battleship.class.php");
 
-	class Destroyer extends Escort
+	class Ork extends Battleship
 	{
-		private $_name = "Kroolgit";
+		private $_name = "";
 		private $_player;
 		private $_size_x = 2;
-		private $_size_y = 3;
-		private $_hull = 5;
-		private $_shield = 0;
+		private $_size_y = 7;
+		private $_hull = 10;
+		private $_shield = 2;
 		private $_speed = 10;
 		private $_wiggle = 2;
 		private $_weapons = array();
