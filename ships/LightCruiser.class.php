@@ -1,16 +1,16 @@
 <?PHP
-include_once("Escort.class.php");
+include_once("Cruiser.class.php");
 
-	class Frigate extends Escort
+	class Light extends Cruiser
 	{
-		private $_name = "Vengeance Of Kukkula";
+		private $_name = "";
 		private $_player;
 		private $_size_x = 1;
-		private $_size_y = 4;
+		private $_size_y = 5;
 		private $_hull = 5;
-		private $_shield = 0;
-		private $_speed = 12;
-		private $_wiggle = 4;
+		private $_shield = 1;
+		private $_speed = 18;
+		private $_wiggle = 6;
 		private $_weapons = array();
 		private $_charge = 0;
 		private $_PP = 10;

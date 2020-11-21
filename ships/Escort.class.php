@@ -9,8 +9,8 @@
 		private $_shield;
 		private $_speed;
 		private $_wiggle;
-		private $_weapons = array();
 		private $_charge;
+		private $_weapons = array();
 		private $_PP;
 
 		public function __contruct($_name, $_player, $_size_x, $_size_y, $_hull,
@@ -60,6 +60,30 @@
 				$this->_shield = $this->_shield + 1;
 			}
 			//aslo needs to save info
+		}
+
+		public function fire($weapon) 
+		{
+			foreach ($this->_weapons as $w) 
+			{
+				if ($w->getWeapons() === $weapon)
+				{
+					return TRUE;
+				}
+			}
+			return FALSE;
+		}
+
+		public function getCharge()
+		{
+			if (trait_exists("Frigate") || trait_exists("Destroyer"))
+			{
+				return $this->_charge + $_charge;
+			}
+			else
+			{
+				return $this->_charge;
+			}
 		}
 
 		public function getSizeX()

@@ -64,6 +64,18 @@
 			//also needs to save info
 		}
 
+		public function fire($weapon) 
+		{
+			foreach ($this->_weapons as $w) 
+			{
+				if ($w->getWeapons() === $weapon)
+				{
+					return TRUE;
+				}
+			}
+			return FALSE;
+		}
+
 		public function getSizeX()
 		{
 			return $this->_sizeX;

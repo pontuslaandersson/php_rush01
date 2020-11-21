@@ -12,7 +12,7 @@ include_once("Escort.class.php");
 		private $_speed = 10;
 		private $_wiggle = 2;
 		private $_weapons = array();
-		private $_charge;
+		private $_charge = 0;
 		private $_PP = 10;
 
 		public function __construct()
