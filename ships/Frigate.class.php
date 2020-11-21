@@ -1,8 +1,11 @@
 <?PHP
 include_once("Escort.class.php");
+include_once("../weapons/NautLazer.class.php");
 
 	class Frigate extends Escort
 	{
+		use NautLazer;
+
 		private $_name = "Vengeance Of Kukkula";
 		private $_player;
 		private $_size_x = 1;
@@ -18,8 +21,15 @@ include_once("Escort.class.php");
 		public function __construct()
 		{
 			Parent::__construct($this->_name, $this->_player, $this->_size_x, $this->_size_y,
-			$this->_hull, $this->_shield, $this->_speed, $this->_wiggle, $this->_charge, $this->_PP);
+			$this->_hull, $this->_shield, $this->_speed, $this->_wiggle);
+			echo $this->_name . "\n";
+		}
+
+		public function getWeapons($id)
+		{
+			$idWeapon = $this->getId();
+			Parent::getWeapons($idWeapon);
+			echo "The Vengeance of Kukkula acquired a Nautical Lazer\n\n\n";
 		}
 	}
-
 ?>

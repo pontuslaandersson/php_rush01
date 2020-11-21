@@ -13,19 +13,15 @@
 		private $_charge;
 		private $_PP;
 
-		public function __contruct($_name, $_player, $_size_x, $_size_y, $_hull,
-		$_shield, $_speed, $_wiggle, $_charge, $_PP)
+		public function __construct($_name, $_size_x, $_size_y, $_hull, $_shield, $_speed, $_wiggle)
 		{
 			$this->_name = $_name;
-			$this->_player = $_player;
 			$this->_size_x = $_size_x;
 			$this->_size_y = $_size_y;
 			$this->_hull = $_hull;
 			$this->_shield = $_shield;
 			$this->_speed = $_speed;
 			$this->_wiggle = $_wiggle;
-			$this->_charge = $_charge;
-			$this->_PP = $_PP;
 		}
 
 		public function turn($dir)
@@ -90,9 +86,12 @@
 			return $this->_player;
 		}
 
-		public function getWeapons()
+		public function getWeapons($id)
 		{
-			return $this->_weapons;
+			$this->_weapons = Array(
+				"$id"
+			);
+			print_r($this->_weapons);
 		}
 	}
 ?>

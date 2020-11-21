@@ -1,7 +1,7 @@
 <?PHP
 trait LazerCanon
 {
-	private $_weapon = "lazer canon";
+	private $_idWeapon = "lazer canon";
 	private $_X;
 	private $_charge = 0;
 	private $_shrange = 10;
@@ -22,6 +22,11 @@ trait LazerCanon
 		{
 			exit ("ERROR");
 		}
+	}
+
+	public function getId()
+	{
+		return $this->_idWeapon;
 	}
 }
 ?>

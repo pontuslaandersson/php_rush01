@@ -9,23 +9,18 @@
 		private $_shield;
 		private $_speed;
 		private $_wiggle;
-		private $_charge;
 		private $_weapons = array();
 		private $_PP;
 
-		public function __contruct($_name, $_player, $_size_x, $_size_y, $_hull,
-		$_shield, $_speed, $_wiggle, $_charge, $_PP)
+		public function __construct($_name, $_size_x, $_size_y, $_hull, $_shield, $_speed, $_wiggle)
 		{
 			$this->_name = $_name;
-			$this->_player = $_player;
 			$this->_size_x = $_size_x;
 			$this->_size_y = $_size_y;
 			$this->_hull = $_hull;
 			$this->_shield = $_shield;
 			$this->_speed = $_speed;
 			$this->_wiggle = $_wiggle;
-			$this->_charge = $_charge;
-			$this->_PP = $_PP;
 		}
 
 		public function turn($dir)
@@ -64,13 +59,18 @@
 
 		public function fire($weapon) 
 		{
-			foreach ($this->_weapons as $w) 
+			$traits = Array(
+				"heavy automatic",
+				"heavy lazer",
+				"lazer canon",
+				"macro canon",
+				"nautrical lazer",
+				"side lazer",
+			);
+			foreach ($this->_weapons as $w)
 			{
-				if ($w->getWeapons() === $weapon)
-				{
-					return TRUE;
-				}
-			}
+				//compare one elements of one array with another
+			} 
 			return FALSE;
 		}
 
@@ -78,11 +78,11 @@
 		{
 			if (trait_exists("Frigate") || trait_exists("Destroyer"))
 			{
-				return $this->_charge + $_charge;
+				return $this->_charge;
 			}
 			else
 			{
-				return $this->_charge;
+				return 0;
 			}
 		}
 
@@ -101,9 +101,12 @@
 			return $this->_player;
 		}
 
-		public function getWeapons()
+		public function getWeapons($id)
 		{
-			return $this->_weapons;
+			$this->_weapons = Array(
+				"$id"
+			);
+			print_r($this->_weapons);
 		}
 	}
 ?>

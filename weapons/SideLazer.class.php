@@ -1,7 +1,7 @@
 <?PHP
 trait SideLazer
 {
-	private $_weapon = "side lazers";
+	private $_idWeapon = "side lazers";
 	private $_X;
 	private $_charge = 0;
 	private $_shrange = 10;
@@ -21,6 +21,11 @@ trait SideLazer
 		{
 			exit ("ERROR");
 		}
+	}
+
+	public function getId()
+	{
+		return $this->_idWeapon;
 	}
 }
 ?>
