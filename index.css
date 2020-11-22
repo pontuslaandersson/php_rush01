@@ -5,8 +5,8 @@ H1 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida
 #name {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-style: italic; color: floralwhite; 
 	text-shadow: black;};
-#picture {width: 1360; position: relative; margin-left: auto; 
-	margin-right: auto; text-align: center; float: left}
+#picture {width: 250px; margin: 0 auto;}
+div img {position:absolute; left:0; right:0; margin:auto;
 table {
 		max-width: 100%;
 		height: 100%;
