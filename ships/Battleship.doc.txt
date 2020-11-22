@@ -1,0 +1,8 @@
+<- Battleship ----------------------------------------------------------------
+The Battleship class is a parent class for the medium ships of the fleet.
+It utilises the __construct() method using the ships's name, size (width and 
+length), it's hull integrity, shield, speed, and maneuverability,. 
+
+You can use Power Points to power up your shield or add a charge to your
+weapons. 
+---------------------------------------------------------------- Battleship ->

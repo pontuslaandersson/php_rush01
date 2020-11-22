@@ -1,0 +1,14 @@
+<- Frigate -----------------------------------------------------------------
+The Destroyer class is a child of the Escort class. Its constructing 
+characteristics are as follows:
+
+name: Vengance Of Kukkula
+width: 1
+height: 4
+hull integrity: 5
+shield: 0
+speed: 12
+maneuverability: 4
+
+It uses the NautLazer weapon trait to fire.
+----------------------------------------------------------------- Frigate ->

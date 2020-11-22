@@ -1,0 +1,14 @@
+<- Ork ------------------------------------------------------------------
+The Ork class is a child of the Battleship class. Its constructing 
+characteristics are as follows:
+
+name: You Basez Go Boom
+width: 2
+height: 7
+hull integrity: 10
+shield: 2
+speed: 10
+maneuverability: 2
+
+It uses the LazerCanon weapon trait to fire.
+------------------------------------------------------------------ Ork ->

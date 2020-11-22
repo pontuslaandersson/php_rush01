@@ -1,0 +1,14 @@
+<- Light Cruiser -----------------------------------------------------------
+The Heavy Cruiser class is a child of the Cruiser class. Its constructing 
+characteristics are as follows:
+
+name: Smol Boi
+width: 1
+height: 5
+hull integrity: 6
+shield: 1
+speed: 18
+maneuverability: 6
+
+It uses the SideLazer weapon trait to fire.
+----------------------------------------------------------- Light Cruiser ->

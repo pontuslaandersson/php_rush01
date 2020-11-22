@@ -1,0 +1,14 @@
+<- Destroyer -----------------------------------------------------------------
+The Destroyer class is a child of the Escort class. Its constructing 
+characteristics are as follows:
+
+name: Kroolgit
+width: 2
+height: 3
+hull integrity: 5
+shield: 0
+speed: 10
+maneuverability: 2
+
+It uses the HeavyLazer weapon trait to fire.
+----------------------------------------------------------------- Destroyer ->

@@ -1,0 +1,14 @@
+<- Heavy Cruiser -----------------------------------------------------------
+The Heavy Cruiser class is a child of the Cruiser class. Its constructing 
+characteristics are as follows:
+
+name: Big Boi
+width: 2
+height: 5
+hull integrity: 6
+shield: 1
+speed: 12
+maneuverability: 4
+
+It uses the HeavyAutomatic weapon trait to fire.
+----------------------------------------------------------- Heavy Cruiser ->

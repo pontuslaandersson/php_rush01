@@ -1,0 +1,14 @@
+<- Imperial -------------------------------------------------------------
+The Imoperial class is a child of the Battleship class. Its constructing 
+characteristics are as follows:
+
+name: Boss Bitch
+width: 2
+height: 7
+hull integrity: 8
+shield: 2
+speed: 12
+maneuverability: 3
+
+It uses the HMacroCanon weapon trait to fire.
+------------------------------------------------------------- Imperial ->
