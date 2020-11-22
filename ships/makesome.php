@@ -8,7 +8,6 @@ include_once("OrkBattle.class.php");
 include_once("Escort.class.php");
 include_once("Battleship.class.php");
 include_once("Cruiser.class.php");
-include_once("../weapons/HeavyLazer.class.php");
 
 echo "We have made them ships, here's your fleet!\n\n";
 $ship1 = new Destroyer;
