@@ -30,5 +30,10 @@ include("../weapons/HeavyLazer.class.php");
 			Parent::getWeapons($idWeapon);
 			echo "Krooglit gotz a Heavy Lazer\n\n\n";
 		}
+
+		public function shoot()
+		{
+			$this->shooting($this->_size_x);
+		}
 	}
 ?>

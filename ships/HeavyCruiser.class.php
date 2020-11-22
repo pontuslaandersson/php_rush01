@@ -30,6 +30,11 @@ include_once("../weapons/HeavyAutomatic.class.php");
 			Parent::getWeapons($idWeapon);
 			echo "This Big Boi haz a Heavy Automatic!!!!!\n\n\n";
 		}
+
+		public function shoot()
+		{
+			$this->shooting($this->_size_x);
+		}
 	}
 
 ?>

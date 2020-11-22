@@ -15,7 +15,6 @@ include_once("../weapons/NautLazer.class.php");
 		private $_speed = 12;
 		private $_wiggle = 4;
 		private $_weapons = array();
-		private $_charge = 0;
 		private $_PP = 10;
 
 		public function __construct()
@@ -30,6 +29,11 @@ include_once("../weapons/NautLazer.class.php");
 			$idWeapon = $this->getId();
 			Parent::getWeapons($idWeapon);
 			echo "The Vengeance of Kukkula acquired a Nautical Lazer\n\n\n";
+		}
+
+		public function shoot()
+		{
+			$this->shooting($this->_size_x);
 		}
 	}
 ?>

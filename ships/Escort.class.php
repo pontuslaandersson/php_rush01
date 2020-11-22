@@ -57,6 +57,15 @@
 			//aslo needs to save info
 		}
 
+		public function addCharge()
+		{
+			if ($this->_PP > 0)
+			{
+				$this->_PP = $this->_PP - 1;
+				$this->_charge = $this->_charge + 1;
+			}
+		}
+
 		public function fire($weapon) 
 		{
 			$traits = Array(
@@ -72,18 +81,6 @@
 				//compare one elements of one array with another
 			} 
 			return FALSE;
-		}
-
-		public function getCharge()
-		{
-			if (trait_exists("Frigate") || trait_exists("Destroyer"))
-			{
-				return $this->_charge;
-			}
-			else
-			{
-				return 0;
-			}
 		}
 
 		public function getSizeX()

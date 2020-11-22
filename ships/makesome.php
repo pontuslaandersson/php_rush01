@@ -18,10 +18,17 @@ $ship4 = new Heavy;
 $ship5 = new Imperial;
 $ship6 = new Ork;
 echo "\n\n";
-$ship1->getWeapons("");
+/*$ship1->getWeapons("");
 $ship2->getWeapons("");
 $ship3->getWeapons("");
 $ship4->getWeapons("");
 $ship5->getWeapons("");
 $ship6->getWeapons("");
+echo "\n\n";*/
+$ship1->shoot();
+$ship2->shoot();
+$ship3->shoot();
+$ship4->shoot();
+$ship5->shoot();
+$ship6->shoot();
 ?>

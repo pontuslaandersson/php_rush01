@@ -15,7 +15,6 @@ include_once("../weapons/MacroCanon.class.php");
 		private $_speed = 12;
 		private $_wiggle = 3;
 		private $_weapons = array();
-		private $_charge = 0;
 		private $_PP = 10;
 
 		public function __construct()
@@ -30,6 +29,11 @@ include_once("../weapons/MacroCanon.class.php");
 			$idWeapon = $this->getId();
 			Parent::getWeapons($idWeapon);
 			echo "This Boss AsS Bitch has a Macro Canon\n\n\n";
+		}
+
+		public function shoot()
+		{
+			$this->shooting($this->_size_x);
 		}
 	}
 
